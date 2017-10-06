@@ -1,0 +1,25 @@
+plugins: 
+ - import
+ - meteor
+extends: 
+ - "airbnb-base"
+ - "plugin:meteor/recommended"
+env:
+ meteor: true
+ browser: true
+ node: true
+settings:
+ import/resolver: meteor
+rules:
+ "prefer-arrow-callback": "off"
+ "meteor/no-session": "off"
+ "import/extensions": "off"
+ "import/no-extraneous-dependencies": "off"
+ "no-underscore-dangle": "off"
+ "meteor/eventmap-params":
+  - 2
+  -
+   "eventParamName": "event"
+   "templateInstanceParamName": "instance"
+globals:
+ CryptoJS: true
