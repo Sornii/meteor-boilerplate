@@ -1,25 +1,26 @@
 import { Template } from 'meteor/templating';
-import { Session } from 'meteor/session';
 
 import { Tasks } from '../../../api/tasks/tasks';
 
-import '../task/task';
+import '../taskItem/taskItem';
 import './taskList.html';
 
 Template.taskList.onCreated(function taskListOnCreated() {
+  this.autorun(() => {
+    this.subscribe('allTasks');
+  });
 });
 
 Template.taskList.onRendered(function taskListOnRendered() {
 });
 
 Template.taskList.helpers({
-  noMessages() {
+  noTasks() {
     return Tasks.find({}).count() === 0;
   },
-  messages() {
+  tasks() {
     return Tasks.find({});
   },
 });
 
-Template.taskList.events({
-});
+Template.taskList.events({});

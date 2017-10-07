@@ -1,5 +1,8 @@
 {
   "header": "Boilerplate",
   "description": "É um boilerplate",
-  "task_add": "Adicionar Tarefa"
+  "task_add": "Adicionar Tarefa",
+  "tasks": "Tarefas",
+  "no_tasks_header": "Sem tarefas",
+  "no_tasks": "Não há nenhuma tarefa"
 }

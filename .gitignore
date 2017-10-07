@@ -1,5 +1,6 @@
 # Intellij folders
 .idea/
+*.iml
 
 # Logs
 logs

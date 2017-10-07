@@ -1,5 +1,8 @@
 {
   "header": "Boilerplate",
   "description": "It's a boilerplate",
-  "task_add": "Add Task"
+  "task_add": "Add Task",
+  "tasks": "Tasks",
+  "no_tasks_header": "No Tasks",
+  "no_tasks": "There's no Tasks"
 }

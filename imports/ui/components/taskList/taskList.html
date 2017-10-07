@@ -1,16 +1,17 @@
 <template name="taskList">
-  <div class="ui feed sayito messages">
-    {{#each task in tasks}}
-      {{> taskItem task=task}}
-    {{/each}}
-    {{#if noTasks}}
-      <div class="ui info message">
-        <i class="close icon"></i>
-        <div class="header">
-          {{_ 'no_tasks_header'}}
-        </div>
-        <p>{{_ 'no_tasks'}}</p>
+  {{#if noTasks}}
+    <div class="ui info message">
+      <i class="close icon"></i>
+      <div class="header">
+        {{_ 'no_tasks_header'}}
       </div>
-    {{/if}}
-  </div>
+      <p>{{_ 'no_tasks'}}</p>
+    </div>
+  {{else}}
+    <ul>
+    {{#each task in tasks}}
+      <li>{{> taskItem task=task}}</li>
+    {{/each}}
+    </ul>
+  {{/if}}
 </template>

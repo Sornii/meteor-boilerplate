@@ -1,6 +1,6 @@
 import { SyncedCron } from 'meteor/percolate:synced-cron';
 
-const EXAMPLE_CRON_NAME = 'Cron to rank up the hashtags';
+const EXAMPLE_CRON_NAME = 'Example cron';
 
 SyncedCron.config({
   collectionName: 'crons',
@@ -22,6 +22,6 @@ SyncedCron.add({
     return parser.text('every 5 seconds');
   },
   job() {
-    return {"test": true};
+    return { "test": true };
   },
 });
