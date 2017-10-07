@@ -41,3 +41,5 @@ aldeed:schema-deny
 aldeed:schema-index
 semantic:ui
 juliancwirko:postcss
+accounts-ui
+accounts-password

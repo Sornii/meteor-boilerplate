@@ -17,6 +17,10 @@ const TaskSchema = new SimpleSchema({
     type: String,
     max: 140,
   },
+  /*userId: {
+    type: String,
+    regEx: SimpleSchema.RegEx.Id
+  }*/
 });
 
 Tasks.helpers({
